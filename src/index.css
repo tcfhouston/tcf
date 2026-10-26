@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+  }
+
+  body {
+    font-family: 'Nunito Sans', sans-serif;
+    color: #1F2937;
+    background-color: #ffffff;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-secondary text-deep font-bold px-8 py-4 rounded-full text-base
+           hover:bg-amber-400 hover:scale-105 transition-all duration-200
+           shadow-lg inline-block text-center;
+  }
+
+  .btn-outline {
+    @apply border-2 border-white text-white font-bold px-8 py-4 rounded-full
+           text-base hover:bg-white hover:text-deep transition-all duration-200
+           inline-block text-center;
+  }
+
+  .btn-deep {
+    @apply bg-gradient-to-r from-primary to-blue-700 text-white font-bold
+           py-4 rounded-xl text-lg hover:opacity-90 hover:scale-[1.02]
+           transition-all duration-200 shadow-md inline-block;
+  }
+
+  .pill-label {
+    @apply inline-flex items-center gap-2 bg-secondary/20 border border-secondary/40
+           text-secondary rounded-full px-4 py-1 text-sm font-bold uppercase
+           tracking-widest;
+  }
+
+  .section-eyebrow {
+    @apply text-primary font-bold text-sm uppercase tracking-widest mb-2
+           font-display;
+  }
+
+  .card-base {
+    @apply bg-white rounded-2xl shadow-md p-6;
+  }
+
+  .card-hover {
+    @apply bg-white rounded-2xl shadow-md p-6 hover:shadow-lg
+           hover:-translate-y-1 transition-all duration-200;
+  }
+}
