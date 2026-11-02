@@ -7,7 +7,7 @@ const HERO_IMG = 'https://tcfhouston.org/wp-content/uploads/2025/04/31-e17442533
 const MAX_PRAYER = 3000
 
 export default function PrayerRequest() {
-  const [form, setForm] = useState({ name: '', prayer: '', website: '' })
+  const [form, setForm] = useState({ name: '', email: '', prayer: '', website: '' })
   const [errors, setErrors] = useState({})
   const [loading, setLoading] = useState(false)
   const [submitStatus, setSubmitStatus] = useState(null) // 'success' | 'error'
@@ -15,6 +15,8 @@ export default function PrayerRequest() {
   function validate() {
     const errs = {}
     if (!form.name.trim()) errs.name = 'Name is required.'
+    if (!form.email.trim()) errs.email = 'Email is required.'
+    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email.trim())) errs.email = 'Please enter a valid email address.'
     if (!form.prayer.trim()) errs.prayer = 'Please share your prayer request.'
     return errs
   }
@@ -33,7 +35,7 @@ export default function PrayerRequest() {
       })
       if (!res.ok) throw new Error()
       setSubmitStatus('success')
-      setForm({ name: '', prayer: '', website: '' })
+      setForm({ name: '', email: '', prayer: '', website: '' })
     } catch {
       setSubmitStatus('error')
     } finally {
@@ -116,6 +118,22 @@ export default function PrayerRequest() {
                     className={inputClass(errors.name)}
                   />
                   {errors.name && <p className="text-red-500 text-xs mt-1">{errors.name}</p>}
+                </div>
+
+                <div>
+                  <label className="block text-xs font-bold text-text-main uppercase tracking-wide mb-1.5" htmlFor="email">
+                    Email Address <span className="text-red-500">*</span>
+                  </label>
+                  <input
+                    id="email"
+                    type="email"
+                    maxLength={200}
+                    value={form.email}
+                    onChange={(e) => setForm({ ...form, email: e.target.value })}
+                    placeholder="your@email.com"
+                    className={inputClass(errors.email)}
+                  />
+                  {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email}</p>}
                 </div>
 
                 <div>

@@ -14,9 +14,9 @@ export default async function handler(req, res) {
   }
 
   try {
-    await resend.emails.send({
-      from: 'contact@tcfhouston.org',
-      to: 'tcf@tcfhouston.org',
+    const { error } = await resend.emails.send({
+      from: process.env.EMAIL_FROM || 'contact@tcfhouston.org',
+      to: process.env.EMAIL_TO || 'tcf@tcfhouston.org',
       replyTo: email,
       subject: `New message from ${name} via TCF Website`,
       html: `
@@ -27,6 +27,10 @@ export default async function handler(req, res) {
         <p>${message.replace(/\n/g, '<br/>')}</p>
       `
     });
+    if (error) {
+      console.error('Resend error:', error);
+      return res.status(500).json({ error: 'Failed to send email' });
+    }
     return res.status(200).json({ success: true });
   } catch (err) {
     console.error('Resend error:', err);
