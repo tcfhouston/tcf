@@ -73,7 +73,7 @@ export default function Home() {
 
           <div className="flex flex-col sm:flex-row gap-4">
             <Link to="/contact" className="btn-primary">
-              Join Us This Saturday
+              Join Us This Month
             </Link>
             <Link to="/about" className="btn-outline">
               Learn More
