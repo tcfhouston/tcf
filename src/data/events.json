@@ -1,0 +1,111 @@
+{
+  "recurring": [
+    {
+      "title": "First Friday Prayer",
+      "category": "prayer",
+      "nth": 1,
+      "weekday": 5,
+      "time": "7:30 PM",
+      "location": "Zoom",
+      "description": "Monthly prayer meeting on Zoom, held every first Friday of the month."
+    }
+  ],
+  "events": [
+    {
+      "title": "Monthly Worship Service",
+      "category": "worship",
+      "date": "2026-11-21",
+      "time": "3:30 PM",
+      "location": "Houston, TX",
+      "description": "Monthly worship service. Edit the date or change the title for retreats and conferences."
+    },
+    {
+      "title": "Christmas Celebration",
+      "category": "annual",
+      "date": "2026-12-19",
+      "time": "",
+      "location": "Houston, TX",
+      "description": "Our yearly Christmas gathering. Edit the date, time and details."
+    },
+    {
+      "title": "Monthly Worship Service",
+      "category": "worship",
+      "date": "2027-01-16",
+      "time": "3:30 PM",
+      "location": "Houston, TX",
+      "description": "Monthly worship service. Edit the date or change the title for retreats and conferences."
+    },
+    {
+      "title": "Monthly Worship Service",
+      "category": "worship",
+      "date": "2027-02-20",
+      "time": "3:30 PM",
+      "location": "Houston, TX",
+      "description": "Monthly worship service. Edit the date or change the title for retreats and conferences."
+    },
+    {
+      "title": "Monthly Worship Service",
+      "category": "worship",
+      "date": "2027-03-20",
+      "time": "3:30 PM",
+      "location": "Houston, TX",
+      "description": "Monthly worship service. Edit the date or change the title for retreats and conferences."
+    },
+    {
+      "title": "Monthly Worship Service",
+      "category": "worship",
+      "date": "2027-04-17",
+      "time": "3:30 PM",
+      "location": "Houston, TX",
+      "description": "Monthly worship service. Edit the date or change the title for retreats and conferences."
+    },
+    {
+      "title": "Monthly Worship Service",
+      "category": "worship",
+      "date": "2027-05-15",
+      "time": "3:30 PM",
+      "location": "Houston, TX",
+      "description": "Monthly worship service. Edit the date or change the title for retreats and conferences."
+    },
+    {
+      "title": "Monthly Worship Service",
+      "category": "worship",
+      "date": "2027-06-19",
+      "time": "3:30 PM",
+      "location": "Houston, TX",
+      "description": "Monthly worship service. Edit the date or change the title for retreats and conferences."
+    },
+    {
+      "title": "Monthly Worship Service",
+      "category": "worship",
+      "date": "2027-07-17",
+      "time": "3:30 PM",
+      "location": "Houston, TX",
+      "description": "Monthly worship service. Edit the date or change the title for retreats and conferences."
+    },
+    {
+      "title": "Monthly Worship Service",
+      "category": "worship",
+      "date": "2027-08-21",
+      "time": "3:30 PM",
+      "location": "Houston, TX",
+      "description": "Monthly worship service. Edit the date or change the title for retreats and conferences."
+    },
+    {
+      "title": "Monthly Worship Service",
+      "category": "worship",
+      "date": "2027-09-18",
+      "time": "3:30 PM",
+      "location": "Houston, TX",
+      "description": "Monthly worship service. Edit the date or change the title for retreats and conferences."
+    },
+    {
+      "title": "Monthly Worship Service",
+      "category": "worship",
+      "date": "2027-10-16",
+      "time": "3:30 PM",
+      "location": "Houston, TX",
+      "description": "Monthly worship service. Edit the date or change the title for retreats and conferences."
+    }
+  ]
+}

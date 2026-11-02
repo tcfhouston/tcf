@@ -29,7 +29,10 @@ function YouTubeIcon() {
 const quickLinks = [
   { to: '/history', label: 'History' },
   { to: '/events', label: 'Events' },
+  { to: '/calendar', label: 'Calendar' },
+  { to: '/videos', label: 'Videos' },
   { to: '/bible-study', label: 'Bible Study' },
+  { to: '/prayer', label: 'Prayer Request' },
   { to: '/contact', label: 'Contact Us' },
   { to: '/donate', label: 'Donate' },
 ]

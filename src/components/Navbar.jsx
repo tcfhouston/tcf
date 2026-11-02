@@ -9,6 +9,9 @@ const navLinks = [
   { to: '/about', label: 'About' },
   { to: '/bible-study', label: 'Bible Study' },
   { to: '/events', label: 'Events' },
+  { to: '/calendar', label: 'Calendar' },
+  { to: '/videos', label: 'Videos' },
+  { to: '/prayer', label: 'Prayer' },
   { to: '/contact', label: 'Contact' },
 ]
 
@@ -26,7 +29,7 @@ export default function Navbar() {
   const handleLinkClick = () => setMenuOpen(false)
 
   const desktopLinkClass = ({ isActive }) =>
-    `text-sm font-bold uppercase tracking-wide transition-colors duration-150 ${
+    `whitespace-nowrap text-xs lg:text-sm font-bold uppercase tracking-wide transition-colors duration-150 ${
       isActive
         ? 'text-secondary underline decoration-2 underline-offset-4'
         : scrolled
@@ -64,7 +67,7 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop nav links */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-3 lg:gap-7">
             {navLinks.map(({ to, label }) => (
               <NavLink key={to} to={to} end={to === '/'} className={desktopLinkClass}>
                 {label}

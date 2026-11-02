@@ -28,6 +28,13 @@ const annualEvents = [
     name: 'Young Adult Retreat',
     desc: 'Designed to encourage and equip the next generation of Telugu Christian believers with faith-building sessions, mentorship, and community.',
   },
+  {
+    icon: '🎄',
+    tag: 'Annual',
+    tagColor: 'border-primary bg-primary/10 text-primary',
+    name: 'Christmas Celebration',
+    desc: 'Our yearly Christmas gathering where families come together to celebrate the birth of Jesus through worship, carols, the Christmas message, and a time of food and fellowship.',
+  },
 ]
 
 const outreachEvents = [
@@ -117,7 +124,7 @@ export default function Events() {
         <h2 className="font-display font-black text-3xl md:text-4xl text-deep mb-8">
           Annual &amp; Seasonal Events
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {annualEvents.map((e) => (
             <EventCard key={e.name} {...e} borderColor="border-primary" />
           ))}

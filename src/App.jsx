@@ -10,6 +10,9 @@ import Events from './pages/Events'
 import Contact from './pages/Contact'
 import History from './pages/History'
 import Donate from './pages/Donate'
+import PrayerRequest from './pages/PrayerRequest'
+import Calendar from './pages/Calendar'
+import Videos from './pages/Videos'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -33,6 +36,9 @@ function AppRoutes() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/history" element={<History />} />
           <Route path="/donate" element={<Donate />} />
+          <Route path="/prayer" element={<PrayerRequest />} />
+          <Route path="/calendar" element={<Calendar />} />
+          <Route path="/videos" element={<Videos />} />
         </Routes>
       </main>
       <Footer />
